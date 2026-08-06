@@ -26,7 +26,7 @@
     --_typography---line-height--1-4: 1.4;
     --_typography---line-height--1-05: 1.05;
     --black: black;
-    --_colors---sunbound-blue: #0b4881;
+    --_colors---custom-blue: #0b4881;
     --_typography---headings--h4-32: 2rem;
     --_typography---headings--h5-24: 1.5rem;
     --_typography---headings--h7-14: .875rem;
@@ -43,7 +43,7 @@
     --_typography---headings--h6-20: 1.25rem;
     --_typography---body-text--xl-20: 1.25rem;
     --_typography---body-text--2xl-24: 1.5rem;
-    --_colors---sunbound-blue-5: #0b48810a;
+    --_colors---custom-blue-5: #0b48810a;
     --_typography---font-family--technical: 'Spacemono',Arial,sans-serif;
     --_typography---buttons--s: .75rem;
     --_colors---white-40: #fff6;

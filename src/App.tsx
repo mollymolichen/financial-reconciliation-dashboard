@@ -146,7 +146,7 @@ function App() {
     <div className="app-shell">
       <header className="hero">
         <div>
-          <p className="eyebrow">Sunbound AI</p>
+          <p className="eyebrow">Payments Platform</p>
           <h2>Reconcile payments against bank statements</h2>
           <p className="subtext">Use this tool to reconcile flagged payments against bank statements over any date range.</p>
         </div>
