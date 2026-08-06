@@ -1,6 +1,4 @@
 import { ChangeEvent, useMemo, useRef, useState } from 'react';
-import samplePaymentsCsv from '../payments_to_reconcile.csv?raw';
-import sampleBankCsv from '../bank_statement_rows.csv?raw';
 import DiscrepancyResolveDialog from './components/DiscrepancyResolveDialog';
 import ExceptionDialog from './components/ExceptionDialog';
 import ImportPanel from './components/ImportPanel';
@@ -12,13 +10,11 @@ import { FilterKey, ReconciliationItem, ReconciliationStatus, SortDirection, Sor
 
 /* Coordinates data import, reconciliation state, and action workflows across the app UI. */
 function App() {
-  const [paymentsText, setPaymentsText] = useState(samplePaymentsCsv);
-  const [bankText, setBankText] = useState(sampleBankCsv);
-  const [paymentsFileName, setPaymentsFileName] = useState('payments_to_reconcile.csv (sample)');
-  const [bankFileName, setBankFileName] = useState('bank_statement_rows.csv (sample)');
-  const [items, setItems] = useState<ReconciliationItem[]>(() =>
-    createItemsFromCsv(parsePaymentsCsv(samplePaymentsCsv), parseBankCsv(sampleBankCsv)),
-  );
+  const [paymentsText, setPaymentsText] = useState('');
+  const [bankText, setBankText] = useState('');
+  const [paymentsFileName, setPaymentsFileName] = useState('');
+  const [bankFileName, setBankFileName] = useState('');
+  const [items, setItems] = useState<ReconciliationItem[]>([]);
 
   const [activeFilter, setActiveFilter] = useState<FilterKey | null>('open');
   const [exceptionItem, setExceptionItem] = useState<ReconciliationItem | null>(null);
